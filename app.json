@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/shangchen/shangchen",
-    "pages/fenlei/fenlei",
+    "pages/video/video",
     "pages/tuijian/tuijian",
     "pages/gouwuche/gouwuche",
     "pages/wode/wode",
@@ -32,10 +32,10 @@
       "selectedIconPath":"image/DeepShoppingMall.png"
     },
     {
-    "pagePath": "pages/shangchen/shangchen",
-    "text": "分类",
-    "iconPath": "image/Classification.png",
-    "selectedIconPath": "image/DeepClassification.png"
+    "pagePath": "pages/video/video",
+    "text": "彩妆视频",
+    "iconPath": "image/Video.png",
+    "selectedIconPath": "image/DeepVideo.png"
     },
     {
       "pagePath": "pages/tuijian/tuijian",

@@ -1,6 +1,6 @@
 <!--pages/shangchen/shangchen.wxml-->
-<view class="container"> <!--大容器第一行-->
-  <view class = "search">
+<view class="container"> <!--定义一整个大的页面-->
+  <view class = "search"> <!--第一行的搜索栏显示-->
     <image class = "Sweepcode" src='../../image/Sweepcode .png' mode ='secaleToFill'></image>
     <view class="space"></view>
     <image class = "Camera" src='../../image/Camera.png' mode ='secaleToFill'></image>
@@ -10,25 +10,20 @@
        <image class = "Search" src='../../image/Search.png' mode ='secaleToFill'></image>
   </view>
   <!--热搜行-->
-  <view class="hot_search">
+  <view class="hot_search"><!--热搜栏的设定-->
     <text class="words">热搜：</text>
     <input class='hot' value='美妆套装'></input>
     <input class='hot' value='眉笔'></input>
     <input class='hot' value='彩妆蛋'></input>
     <input class='hot' value='眼影'></input>
 
-   
-
-
-
   </view>
 
   <!--广告行-->
-  <view class="advertisement">
+  <view class="advertisement"><!--第三块品鉴肤色鉴定行-->
     <image src='../../image/dksl.png'class="picture"></image>
-    
   </view>
-    <!--轮播图片功能的实现-->
+    <!--轮播图片功能的实现代码-->
     <swiper class = 'lunbo' indicator-dots='true' autoplay='true' interval='4000'>
       <swiper-item><image src='https://gaitaobao4.alicdn.com/tfscom/i4/2201275213239/O1CN010WWE7M1ZnVOmm7JIM_!!2201275213239.jpg_240x240xz.jpg_.webp'></image></swiper-item>
       <swiper-item><image src='https://gaitaobao1.alicdn.com/tfscom/i2/3997753843/O1CN012zgHcc1eG8cQBQTmN_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
@@ -38,29 +33,132 @@
   <view>
   </view>
 
-  <!--小类别-->
-  <view class="category" style="disable:flex;">
-    <image src='../../image/Hot.png' class="cate"></image>
-    <image src='../../image/rouge.png' class="cate"></image>
-    <image src='../../image/FaceClear.png' class="cate"></image>
-    <image src='../../image/EyeClear.png' class="cate"></image>
-    <image src='../../image/Painting.png' class="cate"></image>
-    <image src='../../image/mask.png' class="cate"></image>
-    <image src='../../image/Perfume.png' class="cate"></image>
-    <image src='../../image/ColorEggs.png' class="cate"></image>
-    <image src='../../image/Eyeshadow.png' class="cate"></image>
-    <image src='../../image/More.png' class="cate"></image>
-  </view>
+<view class='adduserorder' style='disabled:flex;'><!--分类的设定-->
+  <view catchtap="handleClicks"  class="circle">
+    <image mode='scaleToFill' src='/image/hot.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>热门</label>
+    </view>
+ </view>
 
-    <!--货物购买详情-->
-    <view class="goods_info">
-    <image src="https://gaitaobao3.alicdn.com/tfscom/i2/3826980745/O1CN01IFnaR41HNFZk3gJaD_!!3826980745.jpg_240x240xz.jpg_.webp" class="goods"></image>
-    <image src="https://gaitaobao2.alicdn.com/tfscom/i2/679335095/O1CN015Lmhib1nVYTIlvBpn_!!679335095.jpg_240x240xz.jpg_.webp" class="goods"></image>
-    <image src="https://gaitaobao4.alicdn.com/tfscom/i3/112302405/O1CN01p2OmRO1TdX4YJtH6h_!!112302405.jpg_240x240xz.jpg_.webp" class="goods"></image>
-    <image src=https://img.alicdn.com/bao/uploaded/i4/2200623931559/O1CN01TYWM881NO40WIfow2_!!0-item_pic.jpg_360x360xzq90s150.jpg_.webp" class="goods"></image>
-  </view>
+ <view type="handleClicks" catchtap="handleClicks" class="circle">
+  <image mode='aspectFill' src='/image/Rouge.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>口红</label>
+    </view>
+ </view>
+ 
+ <view type="handleClicks" catchtap="handleClicks" class="circle">
+  <image mode='aspectFill' src='/image/EyeClear.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>眼影</label>
+    </view>
+ </view>
+
+ <view type="handleClicks" catchtap="handleClicks" class="circle">
+  <image mode='aspectFill' src='/image/ColorEggs.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>彩妆蛋</label>
+    </view>
+ </view>
+ 
+ <view  catchtap="videoApp" mode="widthFix" class="circle">
+  <image mode='aspectFill' src='/image/Mask.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>面膜</label>
+    </view>
+ </view>
+
+ <view  catchtap="videoApp" mode="widthFix" class="circle">
+  <image mode='aspectFill' src='/image/EyeClear.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>睫毛刷</label>
+    </view>
+ </view>
+
+ <view  catchtap="videoApp" mode="widthFix" class="circle">
+  <image mode='aspectFill' src='/image/FaceClear.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>洗面奶</label>
+    </view>
+ </view>
+
+ <view  catchtap="videoApp" mode="widthFix" class="circle">
+  <image mode='aspectFill' src='/image/Perfume.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>香水</label>
+    </view>
+ </view>
+
+ <view  catchtap="videoApp" mode="widthFix" class="circle">
+  <image mode='aspectFill' src='/image/Painting.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>浮粉刷</label>
+    </view>
+ </view>
+
+ <view  catchtap="videoApp" mode="widthFix" class="circle">
+  <image mode='aspectFill' src='/image/More.png' plain='true' class='image'></image>
+    <view style="width: 100%; text-align: center">
+    <label>更多</label>
+    </view>
+ </view>
+</view>
+ 
 
 
+    <!--货物推荐设置-->
+    <view class='fifth'>
+    <view class='goo-self'>
+      <image class='goo-img' src='../../image/goo1.png'></image>
+      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生 </label>
+      <label class='goo-lastsale'>已售4230件</label>
+      <label class='goo-price'>￥90--￥120</label>
+      <image class='goo-card' src='../../image/card.png'></image>
+    </view>
+    <view class='goo-self'>
+      <image class='goo-img' src='../../image/goo2.png'></image>
+      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
+      <label class='goo-lastsale'>已售4230件</label>
+      <label class='goo-price'>￥90--￥120</label>
+      <image class='goo-card' src='../../image/card.png'></image>
+    </view>
+    <view class='goo-self'>
+      <image class='goo-img' src='../../image/goo3.png'></image>
+      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
+      <label class='goo-lastsale'>已售4230件</label>
+      <label class='goo-price'>￥90--￥120</label>
+      <image class='goo-card' src='../../image/card.png'></image>
+    </view>
+    <view class='goo-self'>
+      <image class='goo-img' src='../../image/goo2.png'></image>
+      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
+      <label class='goo-lastsale'>已售4230件</label>
+      <label class='goo-price'>￥90--￥120</label>
+      <image class='goo-card' src='../../image/card.png'></image>
+    </view>
+    <view class='goo-self'>
+      <image class='goo-img' src='../../image/goo1.png'></image>
+      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
+      <label class='goo-lastsale'>已售4230件</label>
+      <label class='goo-price'>￥90--￥120</label>
+      <image class='goo-card' src='../../image/card.png'></image>
+    </view>
+    <view class='goo-self'>
+      <image class='goo-img' src='../../image/goo3.png'></image>
+      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
+      <label class='goo-lastsale'>已售4230件</label>
+      <label class='goo-price'>￥90--￥120</label>
+      <image class='goo-card' src='../../image/card.png'></image>
+    </view>
+    <view class='goo-self'>
+      <image class='goo-img' src='../../image/goo2.png'></image>
+      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
+      <label class='goo-lastsale'>已售4230件</label>
+      <label class='goo-price'>￥90--￥120</label>
+      <image class='goo-card' src='../../image/card.png'></image>
+    </view>
+</view>
 
 
 

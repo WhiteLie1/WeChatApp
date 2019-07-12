@@ -1,27 +1,27 @@
-.container{
+.container{ /*整体容器设置*/
   padding: 0;
 }
-.search{
+.search{/*搜索的属性控制*/
   margin: 5px;
   width: 90%;
 }
-image.Sweepcode{
+image.Sweepcode{/*扫码图片的设定*/
   width: 23px;
   height: 23px;
   float: left;
 }
-image.Search{
+image.Search{/*搜索图片的设定*/
   width: 23px;
   height: 23px;
   float: left;
 }
-image.Camera{
+image.Camera{/*照相机图片的设定*/
   width: 23px;
   height: 23px;
   float: left;
 }
 
-.input{
+.input{/*搜索框里面的字体的设置*/
   float: left;
   border: 1px solid;
   color: black;
@@ -30,16 +30,16 @@ image.Camera{
   margin-left: 5px;
 }
 
-.hot_search{
+.hot_search{/*热搜栏的设定*/
   margin-top: 3px;
   margin-left: 0px;
   width: 90%;
 }
-.words{
+.words{/*words 也就是热搜两个字的属性设定*/
   font-weight: bold;
   float: left;
 }
-.hot{
+.hot{/*热搜后面的排布设定*/
   float: left;
   border: 1px solid rgba(0, 0, 0, 0.363);
   border-radius: 20px;
@@ -49,31 +49,22 @@ image.Camera{
   margin-left: 5px;
 }
 
-.advertisement{
-  margin-top: 5px;
-  width: 90%;
-
-}
 .picture{
   width: 100%;
   height: 300rpx;
   display: block;
 }
 
-.category{
+
+
+.advertisement{
   margin-top: 5px;
   width: 100%;
-}
-.cate{
-  float: left;
-  margin: 25rpx;
-  width: 100rpx;
-  height: 100rpx;
-}
 
+}
 
 .goods_info{
-  margin-top: 0px;
+  margin-top:23px;
   width: 100%;
 }
 .goods{
@@ -81,11 +72,72 @@ image.Camera{
   width: 60%;
   height: 300rpx;
 }
-.lunbo{
-  width: 100%
+.lunbo{/*轮播图片的设置*/
+  width:100%
 }
 .lunbo image{
   width: 95%
 }
 
+.image{
+  float: left;
+  margin: 30rpx;
+  width: 114rpx;
+  height: 85rpx;
+}
+.adduserorder{
+ margin-top: 5px;
+  width: 113%;
+}
 
+.circle{
+  float: left;
+  margin: 10rpx;
+  width: 140rpx;
+  height: 150rpx;
+}
+
+.fifth{
+  margin-top: 15px;
+  width: 750rpx;
+}
+.goo-self{
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 12px;
+  width: 100%;
+  height: 100px;
+}
+.goo-img{
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+.goo-card{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+.goo-lastsale{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  right: 93px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+.goo-price{
+  display: block;
+  position: absolute;
+  color: #DD7A47;
+  font-weight: bolder;
+  bottom: 5px;
+  right: 100px;
+}
