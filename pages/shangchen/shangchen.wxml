@@ -1,0 +1,69 @@
+<!--pages/shangchen/shangchen.wxml-->
+<view class="container"> <!--大容器第一行-->
+  <view class = "search">
+    <image class = "Sweepcode" src='../../image/Sweepcode .png' mode ='secaleToFill'></image>
+    <view class="space"></view>
+    <image class = "Camera" src='../../image/Camera.png' mode ='secaleToFill'></image>
+    <view class="space"></view>
+    <input class="input" placeholder="    搜索商品，共9803款好物" bindtap="entrySearch" disabled />
+
+       <image class = "Search" src='../../image/Search.png' mode ='secaleToFill'></image>
+  </view>
+  <!--热搜行-->
+  <view class="hot_search">
+    <text class="words">热搜：</text>
+    <input class='hot' value='美妆套装'></input>
+    <input class='hot' value='眉笔'></input>
+    <input class='hot' value='彩妆蛋'></input>
+    <input class='hot' value='眼影'></input>
+
+   
+
+
+
+  </view>
+
+  <!--广告行-->
+  <view class="advertisement">
+    <image src='../../image/dksl.png'class="picture"></image>
+    
+  </view>
+    <!--轮播图片功能的实现-->
+    <swiper class = 'lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+      <swiper-item><image src='https://gaitaobao4.alicdn.com/tfscom/i4/2201275213239/O1CN010WWE7M1ZnVOmm7JIM_!!2201275213239.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+      <swiper-item><image src='https://gaitaobao1.alicdn.com/tfscom/i2/3997753843/O1CN012zgHcc1eG8cQBQTmN_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+      <swiper-item><image src='https://gaitaobao1.alicdn.com/tfscom/i3/3913366795/O1CN018qJymw2049nOeZJUW_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/2200619636899/O1CN01Jh3XbL20pmzKlSg7L_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+    </swiper>
+  <view>
+  </view>
+
+  <!--小类别-->
+  <view class="category" style="disable:flex;">
+    <image src='../../image/Hot.png' class="cate"></image>
+    <image src='../../image/rouge.png' class="cate"></image>
+    <image src='../../image/FaceClear.png' class="cate"></image>
+    <image src='../../image/EyeClear.png' class="cate"></image>
+    <image src='../../image/Painting.png' class="cate"></image>
+    <image src='../../image/mask.png' class="cate"></image>
+    <image src='../../image/Perfume.png' class="cate"></image>
+    <image src='../../image/ColorEggs.png' class="cate"></image>
+    <image src='../../image/Eyeshadow.png' class="cate"></image>
+    <image src='../../image/More.png' class="cate"></image>
+  </view>
+
+    <!--货物购买详情-->
+    <view class="goods_info">
+    <image src="https://gaitaobao3.alicdn.com/tfscom/i2/3826980745/O1CN01IFnaR41HNFZk3gJaD_!!3826980745.jpg_240x240xz.jpg_.webp" class="goods"></image>
+    <image src="https://gaitaobao2.alicdn.com/tfscom/i2/679335095/O1CN015Lmhib1nVYTIlvBpn_!!679335095.jpg_240x240xz.jpg_.webp" class="goods"></image>
+    <image src="https://gaitaobao4.alicdn.com/tfscom/i3/112302405/O1CN01p2OmRO1TdX4YJtH6h_!!112302405.jpg_240x240xz.jpg_.webp" class="goods"></image>
+    <image src=https://img.alicdn.com/bao/uploaded/i4/2200623931559/O1CN01TYWM881NO40WIfow2_!!0-item_pic.jpg_360x360xzq90s150.jpg_.webp" class="goods"></image>
+  </view>
+
+
+
+
+
+
+
+</view>

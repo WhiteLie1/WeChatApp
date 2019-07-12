@@ -1,0 +1,18 @@
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bg_red{
+  background: lightcoral;
+}
+.shape{
+  width: 100px;
+  height: 100px;
+}
+.bg_blue{
+  background: lightblue;
+}
+.bg_green{
+  background: greenyellow;
+}

@@ -1,0 +1,6 @@
+<view class='section'>
+  <view class='bg_red shape'>1</view>
+  <view class='bg_blue shape'>2</view>
+  <view class='bg_green shape'>3</view>
+
+</view>
