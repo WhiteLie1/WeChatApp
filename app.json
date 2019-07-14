@@ -27,9 +27,9 @@
     "backgroundColor":"#486",
     "list":[{
       "pagePath": "pages/shangchen/shangchen",
-      "text":"商城",
-      "iconPath":"image/ShoppingMall.png",
-      "selectedIconPath":"image/DeepShoppingMall.png"
+      "text":"首页",
+      "iconPath":"image/ShouYe.png",
+      "selectedIconPath":"image/DeepShouYe.png"
     },
     {
     "pagePath": "pages/video/video",

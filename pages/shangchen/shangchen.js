@@ -9,6 +9,7 @@ Page({
     isFirstLoad: true,   // 用于判断List数组是不是空数组，默认true，空的数
     hasMore: false,    // “加载更多”
     
+    
 
 
    
