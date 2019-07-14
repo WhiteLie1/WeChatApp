@@ -33,75 +33,56 @@
   <view>
   </view>
 
-<view class='adduserorder' style='disabled:flex;'><!--分类的设定-->
-  <view catchtap="handleClicks"  class="circle">
-    <image mode='scaleToFill' src='/image/hot.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>热门</label>
-    </view>
- </view>
+<view class='adduserorder'><!--分类的设定-->
+  <view class="menu-self remen">
+    <image class='menu-img' src='/image/hot.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>热门</label>
+  </view>
 
- <view type="handleClicks" catchtap="handleClicks" class="circle">
-  <image mode='aspectFill' src='/image/Rouge.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>口红</label>
-    </view>
- </view>
+ <view class="menu-self remen">
+    <image class='menu-img' src='/image/Rouge.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>口红</label>
+  </view>
  
- <view type="handleClicks" catchtap="handleClicks" class="circle">
-  <image mode='aspectFill' src='/image/EyeClear.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>眼影</label>
-    </view>
- </view>
+  <view class="menu-self remen">
+    <image class='menu-img' src='/image/Eyeshadow.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>口红</label>
+  </view>
 
- <view type="handleClicks" catchtap="handleClicks" class="circle">
-  <image mode='aspectFill' src='/image/ColorEggs.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>彩妆蛋</label>
-    </view>
- </view>
+  <view class="menu-self remen">
+    <image class='menu-img' src='/image/ColorEggs.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>彩妆蛋</label>
+  </view>
+
+ <view class="menu-self remen">
+    <image class='menu-img' src='/image/Mask.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>面膜</label>
+  </view>
+
+ <view class="menu-self remen">
+    <image class='menu-img' src='/image/EyeClear.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>睫毛刷</label>
+  </view>
  
- <view  catchtap="videoApp" mode="widthFix" class="circle">
-  <image mode='aspectFill' src='/image/Mask.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>面膜</label>
-    </view>
+
+ <view class="menu-self remen">
+    <image class='menu-img' src='/image/FaceClear.png' plain='true' mode='widthFix'></image>
+  <label class='menu-des'>洗面奶</label>
  </view>
 
- <view  catchtap="videoApp" mode="widthFix" class="circle">
-  <image mode='aspectFill' src='/image/EyeClear.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>睫毛刷</label>
-    </view>
+ <view class="menu-self remen">
+    <image class='menu-img' src='/image/Perfume.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>香水</label>
  </view>
 
- <view  catchtap="videoApp" mode="widthFix" class="circle">
-  <image mode='aspectFill' src='/image/FaceClear.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>洗面奶</label>
-    </view>
+ <view class="menu-self remen">
+    <image class='menu-img' src='/image/Painting.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>浮粉刷</label>
  </view>
 
- <view  catchtap="videoApp" mode="widthFix" class="circle">
-  <image mode='aspectFill' src='/image/Perfume.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>香水</label>
-    </view>
- </view>
-
- <view  catchtap="videoApp" mode="widthFix" class="circle">
-  <image mode='aspectFill' src='/image/Painting.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>浮粉刷</label>
-    </view>
- </view>
-
- <view  catchtap="videoApp" mode="widthFix" class="circle">
-  <image mode='aspectFill' src='/image/More.png' plain='true' class='image'></image>
-    <view style="width: 100%; text-align: center">
-    <label>更多</label>
-    </view>
+ <view class="menu-self remen">
+    <image class='menu-img' src='/image/More.png' plain='true' mode='widthFix'></image>
+    <label class='menu-des'>更多</label>
  </view>
 </view>
  

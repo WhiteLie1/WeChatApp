@@ -86,8 +86,8 @@ image.Camera{/*照相机图片的设定*/
   height: 85rpx;
 }
 .adduserorder{
- margin-top: 5px;
-  width: 113%;
+  margin-top: 15px;
+  width: 750rpx;
 }
 
 .circle{
@@ -140,4 +140,18 @@ image.Camera{/*照相机图片的设定*/
   font-weight: bolder;
   bottom: 5px;
   right: 100px;
+}
+.menu-self{
+  width: 33px;
+  height: 40px;
+  font-size: 11px;
+  text-align: center;
+  margin: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  float: left;
+}
+.menu-img{
+  width: 33px;
+  height: 30px
 }
