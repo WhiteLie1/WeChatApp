@@ -13,10 +13,10 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     //我的菜单的设置
     menuitems:[
-      { text: '完善信息', url: '../userinfo/userinfo', icon: '../../images/icon-index.png', tips: '' },
-      { text: '个性设置', url: '../userinfo/userinfo', icon: '../../images/icon-index.png', tips: '' },
-       { text: '收货地址', url: '../userinfo/userinfo', icon: '../../images/icon-index.png', tips: '' },
-      { text: '全部订单', url: '../userinfo/userinfo', icon: '../../images/icon-index.png', tips: '' }
+      { text: '完善信息', url: '../userinfo/userinfo', icon: '../../image/WanShanXinxi.png', tips: '' },
+      { text: '个性设置', url: '../userinfo/userinfo', icon: '../../image/GeXinSheZhi.png', tips: '' },
+       { text: '收货地址', url: '../userinfo/userinfo', icon: '../../image/ShouHuoDiZhi.png', tips: '' },
+      { text: '全部订单', url: '../userinfo/userinfo', icon: '../../image/QuanBuDingDan.png', tips: '' }
     ],
     //刷新的设置
     pageNum: 1,       // 设置加载的第几次，默认是第一次

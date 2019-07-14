@@ -19,7 +19,7 @@
     <block wx:for="{{menuitems}}" wx:key="item">
       <navigator url="{{item.url}}" class="list-item" hover-class="list-item_active">
         <view class='item'>
-          <image class='item-image' src='../../images/icon-index.png'></image>
+          <image class='item-image' src='../../image/WanShanXinxi.png'></image>
           <text class="item-text">{{item.text}}</text>
           <text class='item-array'>></text>
         </view>
