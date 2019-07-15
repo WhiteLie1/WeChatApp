@@ -6,29 +6,7 @@ Page({
    */
   data: {
     //推荐设置
-    imgUrls:[
-      'https://gaitaobao4.alicdn.com/tfscom/i2/915900746/O1CN01ZWL8Ob1HNhwQAs0WF_!!915900746.jpg_240x240xz.jpg_.webp',
-      'https://gaitaobao4.alicdn.com/tfscom/i3/3927670452/O1CN01kMfyHD1FD3YsAKzgS_!!0-item_pic.jpg_240x240xz.jpg_.webp',
-      'https://gaitaobao4.alicdn.com/tfscom/i4/2201245310079/O1CN01r1vujr1CSDpI0U3YX_!!0-item_pic.jpg_240x240xz.jpg_.webp'
-    ],
-    // 以后可以用代码便利文件夹获得文件名
-    image: [
-      '../../image/Camera.png',
-      '../../image/ColorEggs.png',
-      '../../image/Hot.png',
-      '../../image/Mask.png',
-    ],
-    listItems: [
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-    ],
+    
     //刷新设置
     pageNum: 1,       // 设置加载的第几次，默认是第一次
     isFirstLoad: true,   // 用于判断List数组是不是空数组，默认true，空的数组

@@ -1,7 +1,7 @@
  <view class='head head-height'> <!--最上面的头部的一栏的设置-->
     <block wx:if="{{!hasUserInfo && canIUse}}">
       <view class="userinfo">
-        <image class="userinfo-avatar" src="../../images/icon-mine.png" mode="cover"></image>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">微信授权</text>
       </view>
       <button class="login-button head-height" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>

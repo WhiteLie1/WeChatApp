@@ -1,0 +1,8 @@
+<view class="section">
+  <view>
+    <text>腾讯课堂</text>
+  </view>
+  <video class= "videoCss" src='{{url}}'  objectFit='cover' show-center-play-btn = true  controls  danmu-btn page-gesture = "true" enable-progress-gesture = true></video>
+
+</view>
+ 
