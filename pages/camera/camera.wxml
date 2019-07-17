@@ -1,6 +1,3 @@
-
-
-
 <view class="page-body">
 <view class="page-body-wrapper">
 <camera device-position="front" flash="off" binderror="error" class="camera" bindstop='bindstop' binderror='binderror'>
