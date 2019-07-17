@@ -18,10 +18,11 @@
     <input class='hot' value='眼影'></input>
 
   </view>
-
-  <!--广告行-->
+  
+  <!--广告行--><!--camera的实现 image绑定bindtab实现跳转功能-->
   <view class="advertisement"><!--第三块品鉴肤色鉴定行-->
-    <image src='../../image/dksl.png'class="picture"></image>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src='../../image/dksl.png'class="picture"></image>
+    
   </view>
     <!--轮播图片功能的实现代码-->
     <swiper class = 'lunbo' indicator-dots='true' autoplay='true' interval='4000'>

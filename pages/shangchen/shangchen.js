@@ -5,14 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //刷新页面的设置
     pageNum: 1,       // 设置加载的第几次，默认是第一次
     isFirstLoad: true,   // 用于判断List数组是不是空数组，默认true，空的数
     hasMore: false,    // “加载更多”
-    
-    
-
-
-   
   },
   // 下拉刷新
   onPullDownRefresh: function () {
@@ -69,6 +65,13 @@ Page({
   
   },
 
+  //事件处理函数也就是点击图片实现跳转，这里点击图片，就会跳转到camera设置的属性里面去
+  //一旦触发，则立马跳转
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../camera/camera'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
