@@ -23,8 +23,8 @@ Page({
     // 商品列表数据
     list: [{
       id: 1,
-      title: '园艺大师抗皱精华露',
-      image: '../../image/shop_car/list_img.png',
+      title: 'Real Techniques修容化妆刷套装 初学者定妆高光阴影人气美妆工具',
+      image: '../../image/XiuRongTaoZhuang.png',
       pro_name: "30ml",
       num: 1,
       price: 180,
@@ -32,8 +32,8 @@ Page({
     },
     {
       id: 2,
-      title: '伊芙琳玫瑰护手霜',
-      image: '../../image/shop_car/list_tab1.png',
+      title: '泰国美妆蛋抖音爆款干湿两用葫芦美妆蛋化妆海绵粉扑水滴化妆蛋软 ',
+      image: '../../image/MeiZhuangDan.png',
       pro_name: "25g",
       num: 1,
       price: 62,
@@ -41,8 +41,8 @@ Page({
     },
     {
       id: 2,
-      title: '燕麦山羊乳舒缓护手霜',
-      image: '../../image/shop_car/list_tab2.png',
+      title: '小包总的美妆店 三月兔化妆刷套装 腮红刷散粉刷眼影刷10支装礼盒',
+      image: '../../image/MeiBao.png',
       pro_name: "75ml",
       num: 1,
       price: 175,
@@ -81,13 +81,6 @@ Page({
       that.loadData();
     }
   },
-
-
-  
-    
-  
-
-
 
   /**
    * 生命周期函数--监听页面加载

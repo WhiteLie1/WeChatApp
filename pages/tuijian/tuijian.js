@@ -1,12 +1,39 @@
 // pages/tuijian/tuijian.js
 Page({
-
+  /**
+   * 页面的初始数据
+   */
   /**
    * 页面的初始数据
    */
   data: {
     //推荐设置
-    
+    imgUrls: [
+
+'https://gaitaobao2.alicdn.com/tfscom/i3/217745731/TB2C1Z7bkOWBuNjSsppXXXPgpXa_!!217745731.jpg_240x240xz.jpg_.webp',
+      'https://gaitaobao3.alicdn.com/tfscom/i3/1991803548/O1CN01Ars8AE1c51j3YT6jA_!!0-item_pic.jpg_240x240xz.jpg_.webp',
+      'https://gaitaobao3.alicdn.com/tfscom/i2/3398173434/O1CN01dTUIUx1bEocxS9DKS_!!0-item_pic.jpg_240x240xz.jpg_.webp'
+    ],
+    // 以后可以用代码便利文件夹获得文件名
+    images: [
+      '../../image/1.png',
+      '../../image/2.png',
+      '../../image/3.png',
+      '../../image/4.png',
+    ],
+    listItems: [
+      '1',
+      '2',
+      '3',
+      '4',
+      '5',
+      '6',
+      '7',
+      '8',
+      '9',
+    ],
+  
+
     //刷新设置
     pageNum: 1,       // 设置加载的第几次，默认是第一次
     isFirstLoad: true,   // 用于判断List数组是不是空数组，默认true，空的数组
