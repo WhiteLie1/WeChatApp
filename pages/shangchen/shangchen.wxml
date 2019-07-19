@@ -6,7 +6,6 @@
     <image class = "Camera" src='../../image/Camera.png' mode ='secaleToFill'></image>
     <view class="space"></view>
     <input class="input" placeholder="    搜索商品，共9803款好物" bindtap="entrySearch" disabled />
-
        <image class = "Search" src='../../image/Search.png' mode ='secaleToFill'></image>
   </view>
   <!--热搜行-->
@@ -21,8 +20,7 @@
   
   <!--广告行--><!--camera的实现 image绑定bindtab实现跳转功能-->
   <view class="advertisement"><!--第三块品鉴肤色鉴定行-->
-    <image bindtap="bindViewTap" class="userinfo-avatar" src='../../image/dksl.png'class="picture"></image>
-    
+    <image bindtap="bindViewTap" class="userinfo-avatar" src='../../image/dksl.png'class="picture"></image>  
   </view>
     <!--轮播图片功能的实现代码-->
     <swiper class = 'lunbo' indicator-dots='true' autoplay='true' interval='4000'>
@@ -89,61 +87,17 @@
  
 
 
-    <!--货物推荐设置-->
+<!--货物推荐设置 把文件路径全部存到数据库里面去，通过thinksjs后端获取数据-->
     <view class='fifth'>
-    <view class='goo-self'>
-      <image class='goo-img' src='../../image/goo1.png'></image>
-      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生 </label>
-      <label class='goo-lastsale'>已售4230件</label>
-      <label class='goo-price'>￥90--￥120</label>
+    <view wx:for='{{goodsList}}' class='goo-self'>
+      <image class='goo-img' src='{{item.picture_url}}'></image>
+      <label class='goo-des'>{{item.name}}</label>
+      <label class='goo-lastsale'>已售{{item.goods_number}}件</label>
+      <label class='goo-price'>￥{{item.retail_price}}</label>
       <image class='goo-card' src='../../image/card.png'></image>
     </view>
-    <view class='goo-self'>
-      <image class='goo-img' src='../../image/goo2.png'></image>
-      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
-      <label class='goo-lastsale'>已售4230件</label>
-      <label class='goo-price'>￥90--￥120</label>
-      <image class='goo-card' src='../../image/card.png'></image>
-    </view>
-    <view class='goo-self'>
-      <image class='goo-img' src='../../image/goo3.png'></image>
-      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
-      <label class='goo-lastsale'>已售4230件</label>
-      <label class='goo-price'>￥90--￥120</label>
-      <image class='goo-card' src='../../image/card.png'></image>
-    </view>
-    <view class='goo-self'>
-      <image class='goo-img' src='../../image/goo2.png'></image>
-      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
-      <label class='goo-lastsale'>已售4230件</label>
-      <label class='goo-price'>￥90--￥120</label>
-      <image class='goo-card' src='../../image/card.png'></image>
-    </view>
-    <view class='goo-self'>
-      <image class='goo-img' src='../../image/goo1.png'></image>
-      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
-      <label class='goo-lastsale'>已售4230件</label>
-      <label class='goo-price'>￥90--￥120</label>
-      <image class='goo-card' src='../../image/card.png'></image>
-    </view>
-    <view class='goo-self'>
-      <image class='goo-img' src='../../image/goo3.png'></image>
-      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
-      <label class='goo-lastsale'>已售4230件</label>
-      <label class='goo-price'>￥90--￥120</label>
-      <image class='goo-card' src='../../image/card.png'></image>
-    </view>
-    <view class='goo-self'>
-      <image class='goo-img' src='../../image/goo2.png'></image>
-      <label class='goo-des'>抖音网红新手初学者化妆品彩妆盒套装正品遮瑕持久保湿美妆女学生</label>
-      <label class='goo-lastsale'>已售4230件</label>
-      <label class='goo-price'>￥90--￥120</label>
-      <image class='goo-card' src='../../image/card.png'></image>
-    </view>
+    
+      
 </view>
-
-
-
-
 
 </view>

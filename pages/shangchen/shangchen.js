@@ -5,11 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //图片的路径获取
+    src: '',
+    //从数据库拿到我们的数据
+    //商品列表的定义
+    goodsList: [],
     //刷新页面的设置
     pageNum: 1,       // 设置加载的第几次，默认是第一次
     isFirstLoad: true,   // 用于判断List数组是不是空数组，默认true，空的数
     hasMore: false,    // “加载更多”
   },
+  
   // 下拉刷新
   onPullDownRefresh: function () {
     // 显示导航栏loading
@@ -34,8 +40,30 @@ Page({
     }
   },
 
-  //商城界面的滚动设置
-  
+  //
+  onLoad() {
+    //在这里实现前后端的交互和对接功能
+    const requestTask = wx.request({
+      //这个url是本机的IP地址 会出现不合法域名，在 >>这里设置忽略不校验合法域名
+      url: 'http://192.168.43.161:8360/mysqltest', //仅为示例，并非真实的接口地址
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: (res) => { //这边要用 res => 来记录历史
+        console.log(res.data)
+        this.setData({
+          //src: '../../image/goo1.png',
+          //src: res.data,
+          goodsList: res.data //返回数据
+        })
+      }
+    })
+
+  },
 
   /**
    * 生命周期函数--监听页面加载

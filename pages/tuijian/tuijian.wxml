@@ -1,86 +1,31 @@
 <view class='container'> 
-  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}">
-    <block wx:for="{{imgUrls}}">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image" width="355" height="150"/>
-      </swiper-item>
-    </block>
-  </swiper>
- 
+  <!--轮播图片的设定-->
+  <swiper class = 'lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+      <swiper-item><image             src='https://gaitaobao2.alicdn.com/tfscom/i3/217745731/TB2C1Z7bkOWBuNjSsppXXXPgpXa_!!217745731.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/1991803548/O1CN01Ars8AE1c51j3YT6jA_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i2/3398173434/O1CN01dTUIUx1bEocxS9DKS_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/2200619636899/O1CN01Jh3XbL20pmzKlSg7L_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+    </swiper>
  
   <view class='selection'>
     <view class='header'>
       <text>精品推荐</text>
       <text class="text-all">全部精品</text>
     </view>
- 
-    <view class='content'>
- 
-  <!---------------精品推荐------------------------  -->
-      <!--直接手动输入  -->
-       <!-- <view class='content-item'>
-        <image src='../../images/1.png'/>
-      </view>
-      <view class='content-item'>2</view>
-      <view class='content-item'>3</view>
-      <view class='content-item'>4</view> -->
- 
- 
-      <!--用block循环输出页面  -->
-       <block wx:for="{{images}}">
-        <view class='content-item'>
-          <image src='{{item}}'/>
-          <view class='content-item-text'>
-            <text>这里是标题</text>
-          </view>
-        </view>
-      </block> 
- 
-        <!--用包裹view循环输出页面  -->
-        <view class='content-item' wx:for="{{images}}">
-          <image src='{{item}}'/>
-          <view class='content-item-text'>
-            <text>这里是标题</text>
-          </view>
-        </view>
- 
- 
-     
-    </view>
- 
- 
+
+  <view class='Dtuijian'>
+    <view class= 'tuijian1'>1</view>
+    <view class= 'tuijian2'>2</view>
+    <view class= 'tuijian3'>3</view>
+  </view>
+  
   </view>
  
- 
- 
-   <view class='selection'>
+  <view class='selection'>
     <view class='header'>
       <text>热门评测</text>
       <text class="text-all">全部评测</text>
     </view>
- 
-    <view class='list-item' wx:for="listItems">
-    
-      <view class='list-item-images'>
-        <image src='../../image/5.png' class="list-item-images-img"/>
-        <image src='../../image/add.png' class='head'/>
-      </view>
- 
-      <view class='list-item-text'>
- 
-        <view class='list-item-text-title'>
-          <text>标题</text>
-        </view>
-        <view class='list-item-text-content'>
-          <text>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</text>
-        </view>
- 
-        
- 
-      </view>
- 
-    </view>
- 
-  </view> 
- 
+  </view>
+
 </view>
