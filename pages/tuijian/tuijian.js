@@ -1,15 +1,61 @@
 // pages/tuijian/tuijian.js
 Page({
-  /**
-   * 页面的初始数据
-   */
+  
   /**
    * 页面的初始数据
    */
   data: {
     //推荐设置
-    // 以后可以用代码便利文件夹获得文件名
-    
+    // 推荐图片数组的设置
+    images: [
+      {
+        id: '1',
+        src: '../../image/01.png',
+        name: '照片01',
+        data: '2017/11/1'
+      }, {
+        id: '2',
+        src: '../../image/1.png',
+        name: '照片02',
+        data: '2017/11/2'
+      }, {
+        id: '3',
+        src: '../../image/2.png',
+        name: '照片03',
+        data: '2017/11/3'
+      }, {
+        id: '4',
+        src: '../../image/3.png',
+        name: '照片04',
+        data: '2017/11/4'
+      }, {
+        id: '5',
+        src: '../../image/4.png',
+        name: '照片05',
+        data: '2017/11/5'
+      }, {
+        id: '6',
+        src: '../../image/5.png',
+        name: '照片06',
+        data: '2017/11/6'
+      }, {
+        id: '7',
+        src: '../../image/6.png',
+        name: '照片07',
+        data: '2017/11/7'
+      }, {
+        id: '8',
+        src: '../../image/Camera.png',
+        name: '照片08',
+        data: '2017/11/8'
+      }, {
+        id: '9',
+        src: '../../image/Hot.png',
+        name: '照片09',
+        data: '2017/11/9'
+      }
+
+    ],
 
 
     //刷新设置

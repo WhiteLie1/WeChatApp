@@ -1,31 +1,19 @@
-<view class='container'> 
-  <!--轮播图片的设定-->
-  <swiper class = 'lunbo' indicator-dots='true' autoplay='true' interval='4000'>
-      <swiper-item><image             src='https://gaitaobao2.alicdn.com/tfscom/i3/217745731/TB2C1Z7bkOWBuNjSsppXXXPgpXa_!!217745731.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/1991803548/O1CN01Ars8AE1c51j3YT6jA_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i2/3398173434/O1CN01dTUIUx1bEocxS9DKS_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/2200619636899/O1CN01Jh3XbL20pmzKlSg7L_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-    </swiper>
- 
-  <view class='selection'>
-    <view class='header'>
-      <text>精品推荐</text>
-      <text class="text-all">全部精品</text>
+<view class="free-panel-title">美妆会今天买这些，超值！</view>
+    <view class="free-WaterfallFlow">
+      <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}' 
+        wx:if="{{item.id%2!=''}}">
+          <image mode="widthFix" src="{{item.src}}"></image>
+          <view>{{item.name}}</view>
+          <view>{{item.data}}</view>
+        </view>
+      </block>
+      <block>
+        <view class="flex-wrap" wx:for="{{images}}" wx:key='{{item.src}}'
+        wx:if="{{item.id%2==''}}">
+          <image mode="widthFix" src="{{item.src}}"></image>
+          <view>{{item.name}}</view>
+          <view>{{item.data}}</view>
+        </view>
+      </block>
     </view>
-
-  <view class='Dtuijian'>
-    <view class= 'tuijian1'>1</view>
-    <view class= 'tuijian2'>2</view>
-    <view class= 'tuijian3'>3</view>
-  </view>
-  
-  </view>
- 
-  <view class='selection'>
-    <view class='header'>
-      <text>热门评测</text>
-      <text class="text-all">全部评测</text>
-    </view>
-  </view>
-
-</view>
