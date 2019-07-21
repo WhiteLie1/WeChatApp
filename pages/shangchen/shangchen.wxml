@@ -3,7 +3,7 @@
   <view class = "search"> <!--第一行的搜索栏显示-->
     <image class = "Sweepcode" src='../../image/Sweepcode .png' mode ='secaleToFill'></image>
     <view class="space"></view>
-    <image class = "Camera" src='../../image/Camera.png' mode ='secaleToFill'></image>
+      <image class = "Camera" src='../../image/Camera.png' mode ='secaleToFill'></image>
     <view class="space"></view>
     <input class="input" placeholder="    搜索商品，共9803款好物" bindtap="entrySearch" disabled />
        <image class = "Search" src='../../image/Search.png' mode ='secaleToFill'></image>
@@ -15,22 +15,24 @@
     <input class='hot' value='眉笔'></input>
     <input class='hot' value='彩妆蛋'></input>
     <input class='hot' value='眼影'></input>
-
   </view>
   
-  <!--广告行--><!--camera的实现 image绑定bindtab实现跳转功能-->
+  <!--扫码--><!--camera的实现 image绑定bindtab实现跳转功能-->
   <view class="advertisement"><!--第三块品鉴肤色鉴定行-->
     <image bindtap="bindViewTap" class="userinfo-avatar" src='../../image/dksl.png'class="picture"></image>  
   </view>
+
+    
     <!--轮播图片功能的实现代码-->
     <swiper class = 'lunbo' indicator-dots='true' autoplay='true' interval='4000'>
-      <swiper-item><image src='https://gaitaobao4.alicdn.com/tfscom/i4/2201275213239/O1CN010WWE7M1ZnVOmm7JIM_!!2201275213239.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-      <swiper-item><image src='https://gaitaobao1.alicdn.com/tfscom/i2/3997753843/O1CN012zgHcc1eG8cQBQTmN_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-      <swiper-item><image src='https://gaitaobao1.alicdn.com/tfscom/i3/3913366795/O1CN018qJymw2049nOeZJUW_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-      <swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/2200619636899/O1CN01Jh3XbL20pmzKlSg7L_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
-    </swiper>
-  <view>
-  </view>
+<swiper-item><image src='https://gaitaobao2.alicdn.com/tfscom/i3/217745731/TB2C1Z7bkOWBuNjSsppXXXPgpXa_!!217745731.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+<swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/1991803548/O1CN01Ars8AE1c51j3YT6jA_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+<swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i2/3398173434/O1CN01dTUIUx1bEocxS9DKS_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+<swiper-item><image src='https://gaitaobao3.alicdn.com/tfscom/i3/2200619636899/O1CN01Jh3XbL20pmzKlSg7L_!!0-item_pic.jpg_240x240xz.jpg_.webp'></image></swiper-item>
+</swiper>
+
+
+  
 
 <view class='adduserorder'><!--分类的设定-->
   <view class="menu-self remen">

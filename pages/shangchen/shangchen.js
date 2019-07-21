@@ -1,15 +1,16 @@
 // pages/shangchen/shangchen.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     //图片的路径获取
-    src: '',
+    //src: '',图片测试
     //从数据库拿到我们的数据
     //商品列表的定义
     goodsList: [],
+    //滑动图片地址
+    advertisementList:[],
     //刷新页面的设置
     pageNum: 1,       // 设置加载的第几次，默认是第一次
     isFirstLoad: true,   // 用于判断List数组是不是空数组，默认true，空的数
@@ -62,7 +63,7 @@ Page({
         })
       }
     })
-
+   
   },
 
   /**

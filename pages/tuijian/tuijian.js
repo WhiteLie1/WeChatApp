@@ -7,57 +7,7 @@ Page({
   data: {
     //推荐设置
     // 推荐图片数组的设置
-    images: [
-      {
-        id: '1',
-        src: '../../image/01.png',
-        name: '照片01',
-        data: '2017/11/1'
-      }, {
-        id: '2',
-        src: '../../image/1.png',
-        name: '照片02',
-        data: '2017/11/2'
-      }, {
-        id: '3',
-        src: '../../image/2.png',
-        name: '照片03',
-        data: '2017/11/3'
-      }, {
-        id: '4',
-        src: '../../image/3.png',
-        name: '照片04',
-        data: '2017/11/4'
-      }, {
-        id: '5',
-        src: '../../image/4.png',
-        name: '照片05',
-        data: '2017/11/5'
-      }, {
-        id: '6',
-        src: '../../image/5.png',
-        name: '照片06',
-        data: '2017/11/6'
-      }, {
-        id: '7',
-        src: '../../image/6.png',
-        name: '照片07',
-        data: '2017/11/7'
-      }, {
-        id: '8',
-        src: '../../image/Camera.png',
-        name: '照片08',
-        data: '2017/11/8'
-      }, {
-        id: '9',
-        src: '../../image/Hot.png',
-        name: '照片09',
-        data: '2017/11/9'
-      }
-
-    ],
-
-
+    images: [],
     //刷新设置
     pageNum: 1,       // 设置加载的第几次，默认是第一次
     isFirstLoad: true,   // 用于判断List数组是不是空数组，默认true，空的数组
@@ -91,6 +41,26 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //在这里实现前后端的交互和对接功能
+    const requestTask = wx.request({
+      //这个url是本机的IP地址 会出现不合法域名，在 >>这里设置忽略不校验合法域名
+      url: 'http://192.168.111.1:8360/tuijiansql', //仅为示例，并非真实的接口地址
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: (res) => { //这边要用 res => 来记录历史
+        console.log(res.data)
+        this.setData({
+          //src: '../../image/goo1.png',
+          //src: res.data,
+          images: res.data //返回数据
+        })
+      }
+    })
 
   },
 
